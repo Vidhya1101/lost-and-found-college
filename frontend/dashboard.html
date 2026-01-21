@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard | CampusFind</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">CampusFind</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="report-lost.html">Lost</a>
+    <a href="report-found.html">Found</a>
+  </div>
+
+  <div class="auth-links" id="authLinks">
+    <a href="login.html" class="btn outline">Login</a>
+    <a href="signup.html" class="btn primary">Sign Up</a>
+  </div>
+
+  <div class="profile-links" id="profileLinks" style="display:none;">
+    <a href="dashboard.html">Profile</a>
+    <button onclick="logout()" class="btn outline">Logout</button>
+  </div>
+</nav>
+
+<section class="page">
+  <h2 id="welcomeText"></h2>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <h3>Items Reported</h3>
+      <p id="reportedCount">0</p>
+    </div>
+
+    <div class="stat-card">
+      <h3>Items Claimed</h3>
+      <p id="claimedCount">0</p>
+    </div>
+  </div>
+
+  <div class="hero-buttons">
+    <a class="btn primary" href="report-found.html">Report Found Item</a>
+    <a class="btn outline" href="report-lost.html">Search Lost Item</a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

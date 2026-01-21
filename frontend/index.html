@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Lost & Found</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">CampusFind</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="report-lost.html">Lost</a>
+    <a href="report-found.html">Found</a>
+  </div>
+
+  <div class="auth-links" id="authLinks">
+    <a href="login.html" class="btn outline">Login</a>
+    <a href="signup.html" class="btn primary">Sign Up</a>
+  </div>
+
+  <div class="profile-links" id="profileLinks" style="display:none;">
+    <a href="dashboard.html" class="profile-icon">👤</a>
+    <button onclick="logout()" class="btn outline">Logout</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Lost something on campus?</h1>
+  <h2>We’ll help you find it.</h2>
+  <p>A centralized platform to reunite students with their belongings.</p>
+
+  <div class="hero-buttons">
+    <a class="btn primary" href="report-lost.html">I Lost Something</a>
+    <a class="btn outline" href="report-found.html">I Found Something</a>
+  </div>
+</section>
+
+</body>
+</html>

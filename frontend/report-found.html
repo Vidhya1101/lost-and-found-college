@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Report Found Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">CampusFind</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="report-lost.html">Lost</a>
+    <a href="report-found.html">Found</a>
+  </div>
+
+  <div class="auth-links" id="authLinks">
+    <a href="login.html" class="btn outline">Login</a>
+    <a href="signup.html" class="btn primary">Sign Up</a>
+  </div>
+
+  <div class="profile-links" id="profileLinks" style="display:none;">
+    <a href="dashboard.html" class="profile-icon">👤</a>
+    <button onclick="logout()" class="btn outline">Logout</button>
+  </div>
+</nav>
+
+<section class="page">
+  <h2>Report Found Item</h2>
+
+  <form id="foundForm" class="card">
+
+    <label>Item Name <span class="required">*</span></label>
+    <input
+      id="itemName"
+      type="text"
+      placeholder="e.g. Wallet, Phone, ID Card"
+      required
+    >
+
+    <label>Location Found <span class="required">*</span></label>
+    <input
+      id="locationFound"
+      type="text"
+      placeholder="e.g. Library, Canteen, Block A"
+      required
+    >
+
+    <label>Item Kept At <span class="required">*</span></label>
+    <select id="keptAt" required>
+      <option value="">Select location</option>
+      <option value="With Finder">With Me</option>
+      <option value="Main Office">College Main Office</option>
+      <option value="Department">Department / Staff Room</option>
+      <option value="Security">Security / Lost & Found Desk</option>
+    </select>
+
+    <label>Identifying Details <span class="required">*</span></label>
+    <input
+      id="identifiers"
+      type="text"
+      placeholder="e.g. green color, cracked screen, red cover"
+      required
+    >
+
+    <small class="hint">
+      Enter at least one identifying detail.  
+      If multiple, separate using commas.
+    </small>
+
+    <button class="btn primary" type="submit">
+      Submit Found Item
+    </button>
+
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

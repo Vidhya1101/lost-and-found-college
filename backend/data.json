@@ -1,0 +1,29 @@
+{
+  "foundItems": [
+    {
+      "item": "phone",
+      "location": "library",
+      "identifiers": [
+        "green"
+      ],
+      "claimed": true
+    },
+    {
+      "item": "ggt",
+      "location": "ddd",
+      "identifiers": [
+        "sddc"
+      ],
+      "claimed": false
+    },
+    {
+      "item": "ss",
+      "location": "ddcd",
+      "keptAt": "Main Office",
+      "identifiers": [
+        "sccd"
+      ],
+      "claimed": false
+    }
+  ]
+}
